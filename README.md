@@ -1,4 +1,5 @@
 # 🚛 Truckonomy
+[🔗 Open Truckonomy](https://nikunjsaini007.github.io/truckonomy/)
 
 **Truckonomy** is a lightweight dashboard designed for players of **Euro Truck Simulator 2 (ETS2)** and **American Truck Simulator (ATS)** who want a more **immersive trucking company experience**.  
 
