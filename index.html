@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Truckonomy</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+
+<h1 class="logo">
+  <img src="assets/logo.png" class="logo-img" alt="Company Logo"> 
+  <a class="logo-link" href="#">TRUCKONOMY</a>
+</h1>
+
+<nav>
+  <a href="#dashboard"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+  <a href="#finance"><i class="fa-solid fa-euro-sign"></i> Finance</a>
+  <a href="#fleet"><i class="fa-solid fa-truck"></i> Fleet</a>
+  <a href="#drivers"><i class="fa-solid fa-user"></i> Drivers</a>
+  <a href="#jobs"><i class="fa-solid fa-route"></i> Jobs</a>
+</nav>
+
+</header>
+
+<main>
+
+
+<section id="company" class="section">
+  <h2>Company Info</h2>
+  <form id="companyForm">
+    <label>Company Name</label>
+    <input type="text" id="companyNameInput" placeholder="Enter your company name">
+    <button type="submit">
+      <i class="fa-solid fa-save"></i> Save Company Name
+    </button>
+  </form>
+</section>
+
+
+<section id="dashboard" class="section">
+<h2 id="companyDashName">Company Dashboard</h2>
+<div class="dashboard-grid">
+  <div class="card">
+    <h3><i class="fa-solid fa-wallet"></i> Total Money</h3>
+    <p id="displayMoney">—</p>
+  </div>
+  <div class="card">
+    <h3><i class="fa-solid fa-arrow-trend-up"></i> Total Profit</h3>
+    <p id="displayProfit">—</p>
+  </div>
+  <div class="card">
+    <h3><i class="fa-solid fa-arrow-trend-down"></i> Total Loss</h3>
+    <p id="displayLoss">—</p>
+  </div>
+  <div class="card">
+    <h3><i class="fa-solid fa-star"></i> Company Level</h3>
+    <p id="displayLevel">—</p>
+  </div>
+</div>
+</section>
+
+
+
+<section id="finance" class="section">
+<h2>Finance Manager</h2>
+<form id="financeForm">
+  <label>Total Money</label>
+  <input type="number" id="moneyInput">
+  <label>Total Profit</label>
+  <input type="number" id="profitInput">
+  <label>Total Loss</label>
+  <input type="number" id="lossInput">
+  <label>Company Level</label>
+  <input type="number" id="levelInput">
+  <button type="submit">
+    <i class="fa-solid fa-save"></i> Save Finance
+  </button>
+</form>
+</section>
+
+
+
+<section id="fleet" class="section">
+<h2>Truck Fleet</h2>
+<form id="truckForm">
+  <label>Truck Model</label>
+  <input type="text" id="truckModel">
+  <label>Current Location</label>
+  <input type="text" id="truckLocation">
+  <label>Driver Name</label>
+  <input type="text" id="truckDriver">
+  <button type="submit">
+    <i class="fa-solid fa-plus"></i> Add Truck
+  </button>
+</form>
+<div id="truckList" class="list-grid"></div>
+</section>
+
+
+
+<section id="drivers" class="section">
+<h2>Drivers</h2>
+<form id="driverForm">
+  <label>Driver Name</label>
+  <input type="text" id="driverName">
+  <label>Driver Level</label>
+  <input type="number" id="driverLevel">
+  <label>Total Earnings</label>
+  <input type="number" id="driverEarnings">
+  <button type="submit">
+    <i class="fa-solid fa-plus"></i> Add Driver
+  </button>
+</form>
+<div id="driverList" class="list-grid"></div>
+</section>
+
+
+<section id="jobs" class="section">
+<h2>Job History</h2>
+<form id="jobForm">
+  <label>Driver Name</label>
+  <input type="text" id="jobDriver">
+  <label>Cargo</label>
+  <input type="text" id="jobCargo">
+  <label>Route</label>
+  <input type="text" id="jobRoute">
+  <label>Distance (km)</label>
+  <input type="number" id="jobDistance">
+  <label>Profit</label>
+  <input type="number" id="jobProfit">
+  <button type="submit">
+    <i class="fa-solid fa-plus"></i> Add Job
+  </button>
+</form>
+
+
+<table id="jobTable">
+<thead>
+<tr>
+  <th>Driver</th>
+  <th>Cargo</th>
+  <th>Route</th>
+  <th>Distance</th>
+  <th>Profit</th>
+  <th>Delete</th>
+</tr>
+</thead>
+<tbody></tbody>
+</table>
+</section>
+
+</main>
+
+
+
+<footer>
+  <div class="footer-container">
+    <p><strong>Truckonomy</strong> &copy; 2026</p>
+    <p>Developed by Nikunj Saini</p>
+    <p>All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
